@@ -13,7 +13,7 @@ class CashRegister
     @price = price
     @total += @price * quantity
     @items << [item] * quantity
-    @last_transaction = @price
+    @last_transaction = @price * quantity
   end
 
   def total
